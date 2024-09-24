@@ -165,3 +165,14 @@ historyBtn.addEventListener('click', function () {
 
 
 })
+
+
+// blog
+
+const blogs=document.getElementById('blog-btn')
+blogs.addEventListener('click',function(){
+  
+    
+     window.location.href="./blog.html"
+     
+})
