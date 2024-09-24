@@ -21,8 +21,8 @@
 
 </head>
 <body class="lexend-font">
-    <header class="w-11/12  mx-auto p-8   ">
-        <div class="navbar bg-base-100">
+    <header class="w-11/12  mx-auto sticky top-0 backdrop-blur ">
+        <div class="navbar bg-base-100 bg-[#F9F7F3] p-8 ">
             <div class="navbar-start">
               <button class="bg-[#B4F461] py-2 px-6 rounded-lg font-bold ">Blog</button>
             </div>
@@ -35,22 +35,27 @@
 
               <button id="main-btn"
                class="flex space-x-2 bg-gray-50 py-3 px-6 rounded-md"><img src="./image/coin.png" alt=""><h3 class="text-gray-500">5500 BDT</h3></button>
-               
-              <!-- <img src="./image/coin.png" alt="">
-               <div><h3 class="text-gray-500">5500 BDT</h3></div> -->
             </div>
-          </div>   
-    </header>
-    <main class="w-11/12 mx-auto ">
-      <!-- first donate div -->
-    <section class="mt-8 ">
-      <!-- 1st donation btn -->
-      <div class="flex  justify-center space-x-4 ">
+          </div> 
+            <!-- donation btn -->
+          <div class="flex  justify-center space-x-4 mt-12">
            
-        <button class="bg-[#B4F461] py-3 px-6 rounded-lg font-bold ">Donation</button>
-        <button class="bg-gray-200 py-3 px-8 rounded-lg text-gray-500 ">History</button>
-      </div>
-      <div class="lg:flex items-center p-8 mt-12 border border-gray-300 rounded-md">
+            <button id="donation-btn" class="bg-[#B4F461] py-3 px-6 rounded-lg font-bold ">Donation</button>
+            <button id="history-button" class="bg-gray-200 py-3 px-8 rounded-lg text-gray-500 ">History</button>
+          </div>
+    </header>
+    <main id="all-divs" class="w-11/12 mx-auto ">
+      <!-- first donate div -->
+
+    <section class="mt-8 ">
+  
+      
+      <!-- <div class="flex  justify-center space-x-4 ">
+           
+        <button id="donation-btn" class="bg-[#B4F461] py-3 px-6 rounded-lg font-bold ">Donation</button>
+        <button id="history-btn" class="bg-gray-200 py-3 px-8 rounded-lg text-gray-500 ">History</button>
+      </div> -->
+      <div id="first-div" class="lg:flex items-center p-8 mt-12 border border-gray-300 rounded-md">
        
         <div class=" w-full">
           <img src="./image/noakhali.png" alt="" >
@@ -124,7 +129,17 @@
       </div>
 
     </section>
-    </main>
+      
+  </main>
+
+  <!--history item --> 
+    
+    <div class=" w-1/2 mx-auto mt-8" id="history-section">
+      <div id="history-list" class="space-y-3">
+
+      </div>
+    </div>
+    
     <script src="./js/index.js"></script>
 </body>
 </html>
