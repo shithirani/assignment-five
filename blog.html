@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- daisy-ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
  
     
 </head>
 <body>
-   
-    <div>
-        <h1>The blog page should contain 4 questions and their answers:</h1>
+
+   <div class="bg-[#F9F7F3]">
+     
+<div class="navbar  w-11/12  mx-auto   p-8 ">
+    <div id="blog-btn"
+    class="navbar-start">
+    <button id="home-btn" class="bg-[#B4F461]  px-6 py-3 rounded-md">home</button>
+
+    </div>
+    <div class="navbar-center hidden lg:flex gap-x-3">                
+     
+      <div><img src="./image/logo.png" alt=""></i></div>
+      <div><h3 class=" font-bold">Donate Bangladesh</h3></div>
+    </div>
+    <div class="navbar-end gap-x-3 ">
+
+      <button id="main-btn"
+       class="flex space-x-2 bg-gray-50 py-3 px-6 rounded-md"><img src="./image/coin.png" alt=""><h3 class="text-gray-500">5500 BDT</h3></button>
+    </div>
+  </div> 
+  
+</div>
+  <!-- question-part -->
+    <div class="lg:p-12 p-4">
+        <h1 class="font-bold text-4xl mb-4">
+            Important FAQ 
+        </h1>
 
         <hr>
         <h2>a. What is the Document Object Model (DOM)?</h2>
@@ -18,13 +45,28 @@
         <br>
         <h2>b.How do you select an element from the DOM?</h2>
         <p>Ans:  syntax :-<br>
-        const elementName=document.getElementId('elementId') ;</p><br>
+        const elementName=document.getElementId <br>('elementId') ;</p><br>
 
         <h2>c. What is event delegation in the context of the DOM, and why is it useful?</h2>
-        <p>Ans: </p><br>
-        <h2>d. How do you manipulate an element's attributes and styles using the DOM?</h2>
-        <p>Ans:</p>
+        <p>Ans:  Event delegation in the context of the DOM is a technique where a single event listener is <br> added to a parent element to manage events triggered by its child elements, rather than adding individual <br>event listeners to each child. <br>It contain Improved performance,dynamic content and clear code </p><br>
+        
+        <h2>d. How do you manipulate an element's  attributes and styles using the DOM?</h2>
+        <p>Ans: Manipulate attributes contain getAttribute(attribute): Retrieves the value of a specified attribute,<br> setAttribute(attribute, value): Sets a new value for an attribute and removeAttribute(attribute): <br> Removes an attribute from the elementbr. <br> <br>
+
+         Manipulate style contain classList.add('className'): Adds a class. <br>
+         classList.remove('className'): Removes a class. <br>
+         classList.toggle('className'): Toggles a class <br> (adds if it’s not present, removes if it is). <br>
+         classList.contains('className'): Checks if a class is present.
+        </p>
+        
+        
     </div>
-    <script src="./js/index.js"></script>
+
+    <!-- connection -->
+    <script>
+        document.getElementById('home-btn').addEventListener('click',function(){
+            window.location.href='./index.html'
+        })
+    </script>
 </body>
 </html>

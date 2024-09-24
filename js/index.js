@@ -18,7 +18,8 @@ document.getElementById('flood-donate').addEventListener('click', function (even
         alert('invalid amount')
         return;
     }
-
+   
+    
     const newBalence = getOutValue('flood-one-value');
     const newamount = newBalence + firstDoante;
 
@@ -32,6 +33,8 @@ document.getElementById('flood-donate').addEventListener('click', function (even
     const totalAmount = mainBtn - firstDoante;
 
     document.getElementById('main-btn').innerText = totalAmount.toFixed(2);
+
+    document.getElementById('my_modal_1').showModal();
 
 
     //   history item
@@ -74,6 +77,7 @@ document.getElementById('flood-donate-two').addEventListener('click', function (
     const totalAmount = mainBtn - firstDoante;
 
     document.getElementById('main-btn').innerText = totalAmount.toFixed(2);
+    document.getElementById('my_modal_1').showModal();
 
 
     // history itrm
@@ -113,7 +117,7 @@ document.getElementById('quota-donate-three').addEventListener('click', function
     const totalAmount = mainBtn - firstDoante;
 
     document.getElementById('main-btn').innerText = totalAmount.toFixed(2);
-
+    document.getElementById('my_modal_1').showModal();
 
     // history item
     const historyItem = document.createElement('div');
